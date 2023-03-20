@@ -1,0 +1,31 @@
+﻿<Page x:Class="FitnesGalaxyApp.Pages.MainMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FitnesGalaxyApp.Pages"
+      MinWidth="1200"
+        MaxHeight="3000"
+        MaxWidth="4000"
+        Width="1920"
+        Height="1080"
+        Background="{StaticResource MainWhite}"
+        MinHeight="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="{StaticResource MainBlack}"/>
+        <TextBlock Text="FitnessGalaxy"
+                       Grid.Row="0"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Left"
+                       Margin="50 0 0 0"
+                       FontFamily="{StaticResource MainBold}"
+                       FontWeight="DemiBold"
+                       Foreground="White"
+                       FontSize="30"/>
+        
+    </Grid>
+</Page>
