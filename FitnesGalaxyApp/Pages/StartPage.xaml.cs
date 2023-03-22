@@ -23,11 +23,13 @@ namespace FitnesGalaxyApp.Pages
     {
 
         private AuthUserControll AuthUserControll;
+        private SignUpUserControll SignUpUserControll;
         public StartPage()
         {
 
             InitializeComponent();
             AuthUserControll = new AuthUserControll();
+            SignUpUserControll = new SignUpUserControll();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -39,11 +41,28 @@ namespace FitnesGalaxyApp.Pages
             }
             else
             {
+                if (MainGrid.Children.Contains(SignUpUserControll))
+                {
+                    MainGrid.Children.Remove(SignUpUserControll);
+                }
                 MainGrid.Children.Add(AuthUserControll);
             }
-            
-                
-            
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if (MainGrid.Children.Contains(SignUpUserControll))
+            {
+
+            }
+            else
+            {
+                if (MainGrid.Children.Contains(AuthUserControll))
+                {
+                    MainGrid.Children.Remove(AuthUserControll);
+                }
+                MainGrid.Children.Add(SignUpUserControll);
+            }
         }
     }
 }

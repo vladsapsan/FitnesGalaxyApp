@@ -2,7 +2,6 @@
 using FitnesGalaxyApp.Windows;
 using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -16,42 +15,50 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using FitnesGalaxyApp.DataB.DataSetTableAdapters;
 
 namespace FitnesGalaxyApp.Models
 {
     /// <summary>
-    /// Логика взаимодействия для AuthUserControll.xaml
+    /// Логика взаимодействия для SignUpUserControll.xaml
     /// </summary>
-    public partial class AuthUserControll : UserControl
+    public partial class SignUpUserControll : UserControl
     {
-        DataSet dataSet = new DataSet();
-        DataB.DataSet B;
-        Table_UsersTableAdapter TUTA = new Table_UsersTableAdapter();
-
-
-        public AuthUserControll()
+        public SignUpUserControll()
         {
             InitializeComponent();
-            
-           // TUTA.Fill(B.Table_Users);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-           // for (int i = 0; i < B.Table_Users.Count; i++)
-                if (Login.Text == "Admin")
-                {
-                    if (GetHash(Password.Password) == GetHash("12345678"))
-                    {
+           
 
-                        if (App.Current.MainWindow.GetType() == typeof(StartWindow))
+            if(!Login.Text.Equals(null))
+            {
+                if(!Password.Password.Equals(null))
+                {
+                    if(!Name.Text.Equals(null))
+                    {
+                        if(!SurName.Text.Equals(null))
                         {
-                            (App.Current.MainWindow as StartWindow)._NavigationFrame.Navigate(new MainMenu());
-                            MessageBox.Show("Вход в систему произведен успешно!");
+                            if(!DatePick.Equals(null))
+                            {
+                                if(GenderBox.SelectedItem != null)
+                                {
+                                    string PasswordHash = GetHash(Password.Password);
+
+                                    MessageBox.Show("Успешная регистрация!");
+                                    
+                                }
+                            }
                         }
                     }
                 }
+            }
+            else
+            {
+                MessageBox.Show("Логин не введен!");
+            }
+
         }
         private string GetHash(string stringhash)
         {

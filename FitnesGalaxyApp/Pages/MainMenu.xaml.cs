@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FitnesGalaxyApp.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,16 @@ namespace FitnesGalaxyApp.Pages
         public MainMenu()
         {
             InitializeComponent();
+        }
+
+        //Выход
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (App.Current.MainWindow.GetType() == typeof(StartWindow))
+            {
+                (App.Current.MainWindow as StartWindow)._NavigationFrame.Navigate(new MainMenu());
+
+            }
         }
     }
 }

@@ -5,10 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FitnesGalaxyApp.Pages"
       MinWidth="1200"
-        MaxHeight="3000"
-        MaxWidth="4000"
-        Width="1920"
-        Height="1080"
+       
         Background="{StaticResource MainWhite}"
         MinHeight="700">
     <Grid>
@@ -16,7 +13,12 @@
             <RowDefinition Height="100" />
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Rectangle Fill="{StaticResource MainBlack}"/>
+        <Rectangle Fill="{StaticResource MainBlack}">
+            <Rectangle.Effect>
+                <DropShadowEffect Color="Gray" Direction="330" ShadowDepth="8" Opacity="0.5" BlurRadius="4" />
+            </Rectangle.Effect>
+        </Rectangle>
+
         <TextBlock Text="FitnessGalaxy"
                        Grid.Row="0"
                        VerticalAlignment="Center"
@@ -26,6 +28,61 @@
                        FontWeight="DemiBold"
                        Foreground="White"
                        FontSize="30"/>
-        
+		<Button Content="Запись"
+                    Style="{StaticResource FirstStyle}"
+                    Grid.Row="0"
+                    Padding="15 5 15 5"
+                    FontWeight="DemiBold"
+                    HorizontalAlignment="left"
+                    VerticalAlignment="Center"
+                    FontSize="20"
+                    Margin="300 0 0 0"
+                    Foreground="White"  />
+		<Button Content="Абонемент"
+                    Style="{StaticResource FirstStyle}"
+                    Grid.Row="0"
+                    Padding="15 5 15 5"
+                    FontWeight="DemiBold"
+                    HorizontalAlignment="left"
+                    VerticalAlignment="Center"
+                    FontSize="20"
+                    Margin="470 0 0 0"
+                    Foreground="White"  />
+		<Button Content="Профиль"
+                    Style="{StaticResource FirstStyle}"
+                    Grid.Row="0"
+                    Padding="15 5 15 5"
+                    FontWeight="DemiBold"
+                    HorizontalAlignment="left"
+                    VerticalAlignment="Center"
+                    FontSize="20"
+                    Margin="680 0 0 0"
+                    Foreground="White" />
+        <TextBlock Text="Name: Vladislav"
+                   Grid.Row="0"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
+                   FontSize="20"
+                   Margin="0 0 160 0"
+                   Foreground="WhiteSmoke"
+                   Padding="0 5 15 5"
+                   FontWeight="DemiBold"
+                   />
+        <Button Content="Выйти"
+                    Style="{StaticResource FirstStyle}"
+                    Grid.Row="0"
+                    Padding="15 5 15 5"
+                    FontWeight="DemiBold"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    FontSize="20"
+                    Margin="0 0 5 0"
+                    Foreground="Gray" Click="Button_Click" />
+        <Grid x:Name="BasedGrid"
+            Grid.Row="1">
+            
+            
+        </Grid>
+
     </Grid>
 </Page>
