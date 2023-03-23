@@ -17,6 +17,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using FitnesGalaxyApp.DataB.DataSetTableAdapters;
+using FitnesGalaxyApp.DataB;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace FitnesGalaxyApp.Models
 {
@@ -25,33 +27,36 @@ namespace FitnesGalaxyApp.Models
     /// </summary>
     public partial class AuthUserControll : UserControl
     {
-        DataSet dataSet = new DataSet();
-        DataB.DataSet B;
-        Table_UsersTableAdapter TUTA = new Table_UsersTableAdapter();
-
+        
+        DataB.DataSet BASED = new DataB.DataSet();
+        
+        UsersTableAdapter usersTB = new UsersTableAdapter();
 
         public AuthUserControll()
         {
             InitializeComponent();
+            usersTB.Fill(BASED.Users);
             
-           // TUTA.Fill(B.Table_Users);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-           // for (int i = 0; i < B.Table_Users.Count; i++)
-                if (Login.Text == "Admin")
-                {
-                    if (GetHash(Password.Password) == GetHash("12345678"))
-                    {
+            
 
-                        if (App.Current.MainWindow.GetType() == typeof(StartWindow))
-                        {
-                            (App.Current.MainWindow as StartWindow)._NavigationFrame.Navigate(new MainMenu());
-                            MessageBox.Show("Вход в систему произведен успешно!");
-                        }
-                    }
+
+            for (int i = 0; i < BASED.Users.Rows.Count; i++)
+            {
+
+                if (Login.Text == BASED.Users.Rows[i][1].ToString() && GetHash(Password.Password) == BASED.Users.Rows[i][2].ToString() && BASED.Users.Rows[i][7].ToString()=="1")
+                {
+
+                    (App.Current.MainWindow as StartWindow)._NavigationFrame.Navigate(new MainAdminPage(BASED.Users.Rows[i][3].ToString(), BASED.Users.Rows[i][4].ToString()));
+
                 }
+                
+            }
+            
+
         }
         private string GetHash(string stringhash)
         {

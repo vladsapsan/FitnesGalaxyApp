@@ -1,0 +1,99 @@
+﻿<UserControl x:Class="FitnesGalaxyApp.Models.MainHomeAdminUserControll"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Models="clr-namespace:FitnesGalaxyApp.Models"
+             xmlns:local="clr-namespace:FitnesGalaxyApp.Models" xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp" xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             MinHeight="580" MinWidth="950">
+    <Border>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="180"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid >
+
+
+
+
+                <StackPanel Grid.Row="0" Orientation="Horizontal">
+                    <Models:InfoCard Grid.Column="0" Title="Пользователи" 
+                                     EllipseBackground1="#41518f"
+                                     x:Name="UserCounts"
+                                     Number="25" Icon="UserFriends" 
+                                     Background1="WhiteSmoke"
+                                     Background2="WhiteSmoke"/>
+                    <Models:InfoCard Grid.Column="1" Title="Активные контракты" 
+                                     EllipseBackground1="#41518f"
+                                     x:Name="ContratsCounts"
+                                     Number="9" Icon="File" 
+                                     Background1="WhiteSmoke"
+                                     Background2="WhiteSmoke"/>
+                    <Models:InfoCard Grid.Column="2" Title="Общие продажи" 
+                                     EllipseBackground1="#41518f"
+                                     x:Name="AllCost"
+                                     Number="245,123 ₽" Icon="Coins" 
+                                     Background1="WhiteSmoke"
+                                     Background2="WhiteSmoke"/>
+                </StackPanel>
+
+                
+
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="300"/>
+                </Grid.ColumnDefinitions>
+                <Border CornerRadius="15" Background="#243771" Margin="0 0 40 40" Padding="35 25">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left">
+                            <fa:IconImage Icon="Circle"  
+                                          Style="{StaticResource TitleIcon}" Foreground="White"/>
+                            <TextBlock Text="Реализация" Padding="5 3 0 0"
+                                       Style="{StaticResource menuButtonText}" Foreground="White"/>
+                        </StackPanel>
+                        
+                        <lvc:CartesianChart Grid.Row="1">
+                            
+                        </lvc:CartesianChart>
+                        
+                    </Grid>
+                </Border>
+
+                <Border CornerRadius="15" Grid.Column="1" Background="#243771" Margin="0 0 25 40" Padding="0 20">
+
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackPanel Orientation="Horizontal" Margin="20 0 0 15">
+                            <fa:IconImage Icon="NotesMedical"  
+                                          Style="{StaticResource TitleIcon}" Foreground="White"/>
+                            <TextBlock Text="Последние пользователи" Padding="5 2 0 0" FontWeight="SemiBold"
+                                       Foreground="WhiteSmoke"/>
+                        </StackPanel>
+                       
+                            <StackPanel Grid.Row="1" >
+                            <Models:LastNewUserControll FirstName="Владислав Худяков" Icon="BuildingUser" SecName="Сотрудник"/>
+                                <Models:LastNewUserControll FirstName="Иван Иванович" Icon="UserAlt" SecName="Пользователь"/>
+                            <Models:LastNewUserControll FirstName="Никита Заиграев" Icon="UserAlt" SecName="Пользователь"/>
+                            <Models:LastNewUserControll FirstName="Амадей Моцарт" Icon="BuildingUser" SecName="Сотрудник"/>
+                            <Models:LastNewUserControll FirstName="Владислав Иванович" Icon="BuildingUser"  SecName="Сотрудник"/>
+                                
+
+                            </StackPanel>
+                        
+                    </Grid>
+                </Border>
+            </Grid>
+        </Grid>
+    </Border>
+</UserControl>

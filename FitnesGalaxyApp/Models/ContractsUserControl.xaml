@@ -1,0 +1,113 @@
+﻿<UserControl x:Class="FitnesGalaxyApp.Models.ContractsUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FitnesGalaxyApp.Models" xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp" xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             mc:Ignorable="d" 
+             MinHeight="580" MinWidth="950">
+    <Border CornerRadius="10" Background="Transparent">
+        
+            
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Новый договор" Foreground="WhiteSmoke" HorizontalAlignment="Center"
+                       VerticalAlignment="Bottom" FontSize="24" FontWeight="SemiBold"/>
+
+
+            <Grid Grid.Row="1">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition>
+                        
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Border Background="White" Margin="20 10 0 50" CornerRadius="10">
+                    <Grid>
+                        <Button Name="CreateContract" FontSize="14" FontWeight="DemiBold" 
+                                Margin="0 0 10 10" Background="LightGray"
+                    VerticalAlignment="Bottom" Style="{StaticResource AddButtons}"
+                    HorizontalAlignment="Right" Click="CreateContract_Click" >
+                            <StackPanel Orientation="Horizontal">
+
+
+                                <fa:IconImage Icon="PencilAlt" Margin="5 0 5 0" Width="15"  HorizontalAlignment="Left" Foreground="#41518f" 
+                              Height="15" />
+                                <TextBlock Text="Создать контракт" Padding="0 0 0 3"/>
+                            </StackPanel>
+                        </Button>
+                        
+                    
+                    <StackPanel Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left">
+                        <TextBlock Text="Дата начала действия"
+                           HorizontalAlignment="Center"
+                          Margin="45 10 0 0"
+                           FontSize="15"
+                           Foreground="#41518f" 
+                           FontWeight="SemiBold"/>
+                        <DatePicker VerticalAlignment="Top"
+                        Margin="50 0 0 0" Width="150"
+                        HorizontalAlignment="Left"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" VerticalAlignment="Top" Margin="0 110 0 0" HorizontalAlignment="Left">
+                        <TextBlock Text="Дата конца действия"
+                           HorizontalAlignment="Center"
+                          Margin="45 10 0 0"
+                           FontSize="15"
+                           Foreground="#41518f" 
+                           FontWeight="SemiBold"/>
+                        <DatePicker VerticalAlignment="Top"
+                        Margin="50 0 0 0" Width="150"
+                        HorizontalAlignment="Left"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Width="150" Margin="50" HorizontalAlignment="left" VerticalAlignment="Center">
+
+                        <fa:IconImage Icon="Coins" Margin="5 0 0 5" Width="15"   HorizontalAlignment="Left" Foreground="#41518f" 
+                              Height="15" Style="{StaticResource menuButtonIcon}"/>
+                        <TextBox x:Name="txtsearch" 
+                         Height="40" Style="{StaticResource AuthBox}" Margin="0 0 0 0" Tag="Стоимость"
+                         Foreground="{StaticResource MainBlack}" />
+
+                    </StackPanel>
+                        <StackPanel VerticalAlignment="Top"  HorizontalAlignment="Left" Margin="250 20 00 0">
+                            <ComboBox Margin="10" Name="Fili">
+                                <sys:String>Охана</sys:String>
+                                <sys:String>World Class</sys:String>
+                            </ComboBox>
+                            <ComboBox Margin="10" Name="Users">
+                                <sys:String>Худяков Владислав</sys:String>
+                                <sys:String>Иван Иванович</sys:String>
+                            </ComboBox>
+                            <ComboBox Margin="10" Name="Emploe">
+                                <sys:String>Екатерина катерина</sys:String>
+                                
+                            </ComboBox>
+                            <ComboBox Margin="10">
+                                <sys:String>Базовый</sys:String>
+                                <sys:String>Продвинутый</sys:String>
+                                <sys:String>Максимальный</sys:String>
+                            </ComboBox>
+                        </StackPanel>
+                    </Grid>
+                </Border>
+
+                <StackPanel Grid.Column="1">
+                    <Border Grid.Column="1" Background="#41518f" Margin="10 10 10 0" Height="225" CornerRadius="10" >
+
+                    </Border>
+                    <Border Grid.Column="1" Background="#41518f" Margin="10 10 10 0" Height="225" CornerRadius="10" >
+                        
+                    </Border>
+                </StackPanel>
+                
+        </Grid>
+        </Grid>
+        
+    </Border>
+</UserControl>

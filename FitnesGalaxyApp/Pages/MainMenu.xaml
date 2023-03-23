@@ -6,8 +6,10 @@
       xmlns:local="clr-namespace:FitnesGalaxyApp.Pages"
       MinWidth="1200"
        
-        Background="{StaticResource MainWhite}"
+       
         MinHeight="700">
+    <Border Background="{StaticResource MainWhite}" CornerRadius="10 ">
+        
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100" />
@@ -27,7 +29,7 @@
                        FontFamily="{StaticResource MainBold}"
                        FontWeight="DemiBold"
                        Foreground="White"
-                       FontSize="30"/>
+                       FontSize="25"/>
 		<Button Content="Запись"
                     Style="{StaticResource FirstStyle}"
                     Grid.Row="0"
@@ -71,18 +73,24 @@
         <Button Content="Выйти"
                     Style="{StaticResource FirstStyle}"
                     Grid.Row="0"
-                    Padding="15 5 15 5"
+                    Padding="5 5 5 5"
                     FontWeight="DemiBold"
                     HorizontalAlignment="Right"
                     VerticalAlignment="Center"
-                    FontSize="20"
+                    FontSize="15"
                     Margin="0 0 5 0"
                     Foreground="Gray" Click="Button_Click" />
         <Grid x:Name="BasedGrid"
             Grid.Row="1">
-            
-            
+            <DataGrid Name="MainDataGrid"
+                      Width="775"
+                      Margin="50 0 0 100"
+                      Height="450"
+                      HorizontalAlignment="Left"
+                      VerticalAlignment="Center"/>
+
         </Grid>
 
     </Grid>
+    </Border>
 </Page>

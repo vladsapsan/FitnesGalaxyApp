@@ -1,0 +1,151 @@
+﻿<UserControl x:Class="FitnesGalaxyApp.Models.DataGridTableUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FitnesGalaxyApp.Models" xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+             mc:Ignorable="d" 
+MinHeight="580" MinWidth="950">
+    <Border CornerRadius="10" Background="Transparent">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <Button Name="AddData" FontSize="14" FontWeight="DemiBold" Margin="0 0 10 5"
+                    VerticalAlignment="Bottom" Style="{StaticResource AddButtons}"
+                    HorizontalAlignment="Right" Click="AddData_Click">
+                <StackPanel Orientation="Horizontal">
+                    
+                
+                <fa:IconImage Icon="PlusCircle" Margin="5 0 5 0" Width="15"  HorizontalAlignment="Left" Foreground="#41518f" 
+                              Height="15" />
+                <TextBlock Text="Добавить данные" Padding="0 0 0 3"/>
+                </StackPanel>
+            </Button>
+
+            <Button Name="RefreshData" FontSize="14" FontWeight="DemiBold" Margin="0 40 10 0"
+                    VerticalAlignment="Top" Style="{StaticResource AddButtons}"
+                    HorizontalAlignment="Right" Click="RefreshData_Click">
+                <StackPanel Orientation="Horizontal">
+
+
+                    <fa:IconImage Icon="Refresh" Margin="5 0 5 0" Width="15"  HorizontalAlignment="Left" Foreground="#41518f" 
+                              Height="15" />
+                    <TextBlock Text="Обновить" Padding="0 0 0 3"/>
+                </StackPanel>
+            </Button>
+            
+            
+            <Button Name="ExportData" FontSize="14" FontWeight="DemiBold" Margin="0 0 10 0"
+                    VerticalAlignment="Top" Style="{StaticResource AddButtons}"
+                    HorizontalAlignment="Right" Click="ExportData_Click">
+                <StackPanel Orientation="Horizontal">
+
+
+                    <fa:IconImage Icon="FileExport" Margin="5 0 5 0" Width="15"  HorizontalAlignment="Left" Foreground="#41518f" 
+                              Height="15" />
+                    <TextBlock Text="Экспорт" Padding="0 0 0 3"/>
+                </StackPanel>
+            </Button>
+            <TextBlock Text="Элементы" Name="TxtDatetable" VerticalAlignment="Center" HorizontalAlignment="Left"
+                       Margin="10 50 0 0" Foreground="Wheat" FontSize="25"/>
+            <Separator Height="1" Background="#dae2ea" VerticalAlignment="Bottom"/>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <Button x:Name="Staff" Margin="5 0 0 0" Style="{StaticResource DataChooseButtons}" Click="Staff_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Пользователи" 
+                                   Foreground="WhiteSmoke" Style="{StaticResource menuButtonText}" Padding="5 0 5 0"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="Contracts" Margin="5 0 0 0" Style="{StaticResource DataChooseButtons}" Click="Contracts_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Договора" 
+                                   Foreground="WhiteSmoke" Style="{StaticResource menuButtonText}" Padding="5 0 5 0"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="StafDeploy" Margin="5 0 0 0" Style="{StaticResource DataChooseButtons}" Click="StafDeploy_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Должности" 
+                                   Foreground="WhiteSmoke" Style="{StaticResource menuButtonText}" Padding="5 0 5 0"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="ContractType" Margin="5 0 0 0" Style="{StaticResource DataChooseButtons}" Click="ContractType_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Типы договоров" 
+                                   Foreground="WhiteSmoke" Style="{StaticResource menuButtonText}" Padding="5 0 5 0"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="Employee" Margin="5 0 0 0" Style="{StaticResource DataChooseButtons}" Click="Employee_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Сотрудники" 
+                                   Foreground="WhiteSmoke" Style="{StaticResource menuButtonText}" Padding="5 0 5 0"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="Filials" Margin="5 0 0 0" Style="{StaticResource DataChooseButtons}" Click="Filials_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Филиалы" 
+                                   Foreground="WhiteSmoke" Style="{StaticResource menuButtonText}" Padding="5 0 5 0"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="Gender" Margin="5 0 0 0" Style="{StaticResource DataChooseButtons}" Click="Gender_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Гендер" 
+                                   Foreground="WhiteSmoke" Style="{StaticResource menuButtonText}" Padding="5 0 5 0"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="StafOtdel" Margin="5 0 0 0" Style="{StaticResource DataChooseButtons}" Click="StafOtdel_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Отделы" 
+                                   Foreground="WhiteSmoke" Style="{StaticResource menuButtonText}" Padding="5 0 5 0"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="SportSection" Margin="5 0 0 0" Style="{StaticResource DataChooseButtons}" Click="SportSection_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Спортивные секции" 
+                                   Foreground="WhiteSmoke" Style="{StaticResource menuButtonText}" Padding="5 0 5 0"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="Sport" Margin="5 0 0 0" Style="{StaticResource DataChooseButtons}" Click="Sport_Click" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Спорт" 
+                                   Foreground="WhiteSmoke" Style="{StaticResource menuButtonText}" Padding="5 0 5 0"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <Grid Name="DataGridParse" Grid.Row="2">
+                
+            
+            <DataGrid x:Name="MainDataGrid"
+                Style="{DynamicResource DataGridStyle1}" CellStyle="{DynamicResource DataGridCellStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" RowStyle="{DynamicResource DataGridRowStyle1}" Grid.Row="2">
+                <DataGrid.Columns>
+                    
+                    <DataGridTemplateColumn Header="Изменение" Width="auto">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" >
+                                    <Button Style="{StaticResource EditDataButton}" Name="Edit" Click="Edit_Click"
+                                            FontSize="5" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                        <fa:IconImage Icon="Pencil"  Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"
+                               Style="{StaticResource menuButtonIcon}"/>
+                                    </Button>
+                                    <Button Style="{StaticResource EditDataButton}" Name="Delete" Click="Delete_Click"
+                                            HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                        <fa:IconImage Icon="Trash"     Foreground="White"
+                               Style="{StaticResource menuButtonIcon}"/>
+                                    </Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                </DataGrid.Columns>
+                
+            </DataGrid>
+        </Grid>
+        </Grid>
+    </Border>
+</UserControl>

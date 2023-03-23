@@ -5,15 +5,19 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:FitnesGalaxyApp.Pages"
       MinWidth="1200" 
-        Background="{StaticResource MainWhite}"
+        Background="Transparent"
         MinHeight="700">
-    <Grid x:Name="MainGrid">
+    <Border  CornerRadius="10">
+        <Border.Background>
+            <LinearGradientBrush EndPoint="1,0" StartPoint="0,1">
+                <GradientStop Color="#41518f" Offset="0"/>
+                <GradientStop Color="#27396b" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+        <Grid x:Name="MainGrid">
         
-        <Image x:Name="Mountain" 
-               RenderOptions.BitmapScalingMode="Fant"
-               Stretch="Fill"
-               Source="\Source\163854-nacionalnyj_park_zajon-nacionalnyj_park_brajskanon-nacionalnyj_park_arki-bolshoj_kanon-nacionalnyj_park_dolina_smerti-7680x4320.jpg"
-            />
+        
 
         <Grid>
             <Grid.RowDefinitions>
@@ -29,26 +33,32 @@
                        FontWeight="DemiBold"
                        Foreground="White"
                        FontSize="30"/>
-            <Button Content="Войти"
+                <StackPanel Grid.Row="1" HorizontalAlignment="Left"
+                    VerticalAlignment="Bottom" Margin="0 0 0 100" Orientation="Horizontal">
+                    <Button Content="Войти"
                     Style="{StaticResource FirstStyle}"
-                    Grid.Row="0"
+                    Grid.Row="1"
                     Padding="15 5 15 5"
                     FontWeight="DemiBold"
-                    HorizontalAlignment="Right"
+                    Background="#41518f"
+                    HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     FontSize="20"
-                    Margin="0 0 100 0"
+                    Margin="50 0 20 0"
                     Foreground="White" Click="Button_Click" />
-            <Button Content="Регистрация"
+                    <Button Content="Регистрация"
                     Style="{StaticResource FirstStyle}"
-                    Grid.Row="0"
+                    Grid.Row="1"
+                    Background="#41518f"
                     Padding="15 5 15 5"
                     FontWeight="DemiBold"
-                    HorizontalAlignment="Right"
+                    HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     FontSize="20"
-                    Margin="0 0 300 0"
+                    Margin="0 0 0 0"
                     Foreground="White" Click="Button_Click_1"/>
+                </StackPanel>
+           
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -78,29 +88,10 @@
                            VerticalAlignment="Top"
                            Margin="50 180 0 0"
                     Text="С чем мы сегодня можем помочь?"/>
-                <Button Content="Купить абонемент"
-                        HorizontalAlignment="Left"
-                        Width="540"
-                        Height="65"
-                        Margin="50 0 0 300"
-                        VerticalAlignment="Center"
-                        Style="{StaticResource SecondStyle}"/>
-                <Button Content="Записаться на тренировку"
-                        HorizontalAlignment="Left"
-                        Width="540"
-                        Height="65"
-                        Margin="50 0 0 150"
-                        VerticalAlignment="Center"
-                        Style="{StaticResource SecondStyle}"/>
-                <Button Content="Посетить врача"
-                        HorizontalAlignment="Left"
-                        Width="540"
-                        Height="65"
-                        Margin="50 0 0 0"
-                        VerticalAlignment="Center"
-                        Style="{StaticResource SecondStyle}"/>
+                
 
             </Grid>
         </Grid>
     </Grid>
+    </Border>
 </Page>

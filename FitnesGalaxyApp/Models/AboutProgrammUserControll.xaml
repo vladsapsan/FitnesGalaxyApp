@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="FitnesGalaxyApp.Models.AboutProgrammUserControll"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FitnesGalaxyApp.Models"
+             mc:Ignorable="d" 
+             MinHeight="580" MinWidth="950">
+    <Border CornerRadius="5" Background="Transparent">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="О программе" FontSize="29" Foreground="WhiteSmoke"
+                       VerticalAlignment="Bottom"
+                       FontWeight="DemiBold"
+                       Padding="10"
+                       HorizontalAlignment="Center"/>
+            <StackPanel Grid.Row="1" >
+                <TextBlock Text="Курсовой проект для ИС FitnessGalaxy" FontSize="17" Foreground="WhiteSmoke"
+                       VerticalAlignment="Top"
+                       FontWeight="DemiBold"
+                       Padding="10"
+                       HorizontalAlignment="Center"/>
+                <TextBlock Text="Разработал : Худяков Владислав"  FontSize="15" Foreground="WhiteSmoke"
+                       VerticalAlignment="Top"
+                       
+                       
+                       HorizontalAlignment="Center"/>
+                <TextBlock Text="Github : https://github.com/vladsapsan" FontSize="15"
+                           HorizontalAlignment="Center" Foreground="WhiteSmoke"/>
+            </StackPanel>
+            
+        </Grid>
+    </Border>
+</UserControl>
