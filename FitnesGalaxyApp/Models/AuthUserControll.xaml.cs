@@ -58,7 +58,7 @@ namespace FitnesGalaxyApp.Models
             
 
         }
-        private string GetHash(string stringhash)
+        public string GetHash(string stringhash)
         {
             var md5 = MD5.Create();
             var hash = md5.ComputeHash(Encoding.UTF8.GetBytes(stringhash));

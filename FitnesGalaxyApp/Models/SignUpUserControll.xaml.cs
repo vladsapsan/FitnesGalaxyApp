@@ -82,7 +82,7 @@ namespace FitnesGalaxyApp.Models
             return Convert.ToBase64String(hash);
         }
 
-        private bool ValidatePassword(string password, out string ErrorMessage)
+        public bool ValidatePassword(string password, out string ErrorMessage)
         {
             var input = password;
             ErrorMessage = string.Empty;

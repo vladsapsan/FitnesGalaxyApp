@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FitnesGalaxyApp.App">
+    <Position X="22.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="12" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FitnesGalaxyApp.DataB.DataSet">
+    <Position X="20.75" Y="0.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.Contracts_TypeRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.OtdelDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.ContractsRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.Sport_SectionDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.FilialsRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.DoljnostRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="FitnesGalaxyApp.DataB.DataSet.EmployeeRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.Sport_SectionRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.FilialsRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.GenderDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.Sport_TypeRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.DoljnostRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.ContractsDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.FilialsDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.ContractsRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.OtdelRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.Sport_TypeRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.Sport_SectionRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="FitnesGalaxyApp.DataB.DataSet.Contracts_TypeRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="FitnesGalaxyApp.DataB.DataSet.DoljnostRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="FitnesGalaxyApp.DataB.DataSet.UsersRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.Contracts_TypeRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="FitnesGalaxyApp.DataB.DataSet.Sport_SectionRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Delegate Name="FitnesGalaxyApp.DataB.DataSet.FilialsRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.EmployeeRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.UsersRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.UsersDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.OtdelRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.Sport_TypeDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.Contracts_TypeDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.EmployeeRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="FitnesGalaxyApp.DataB.DataSet.ContractsRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.UsersRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.GenderRow" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="FitnesGalaxyApp.DataB.DataSet.OtdelRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.EmployeeDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="FitnesGalaxyApp.DataB.DataSet.GenderRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.DoljnostDataTable" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Class Name="FitnesGalaxyApp.DataB.DataSet.GenderRowChangeEvent" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+      <Delegate Name="FitnesGalaxyApp.DataB.DataSet.Sport_TypeRowChangeEventHandler" Collapsed="true">
+        <TypeIdentifier />
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEAQACJgI4IlgALABAAGYQBEDEgCQBgIQEAIBAEABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.DataB.DataSetTableAdapters.UsersTableAdapter">
+    <Position X="13.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIgAAAAAAACAICAAAAAAIAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.DataB.DataSetTableAdapters.ContractsTableAdapter">
+    <Position X="19" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.DataB.DataSetTableAdapters.Contracts_TypeTableAdapter">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.DataB.DataSetTableAdapters.DoljnostTableAdapter">
+    <Position X="8.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.DataB.DataSetTableAdapters.EmployeeTableAdapter">
+    <Position X="3.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.DataB.DataSetTableAdapters.FilialsTableAdapter">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.DataB.DataSetTableAdapters.GenderTableAdapter">
+    <Position X="6.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.DataB.DataSetTableAdapters.OtdelTableAdapter">
+    <Position X="17.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.DataB.DataSetTableAdapters.Sport_SectionTableAdapter">
+    <Position X="15.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.DataB.DataSetTableAdapters.Sport_TypeTableAdapter">
+    <Position X="12" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACAICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.DataB.DataSetTableAdapters.TableAdapterManager">
+    <Position X="4" Y="7" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="FitnesGalaxyApp.DataB.DataSetTableAdapters.TableAdapterManager.UpdateOrderOption" Collapsed="true">
+        <TypeIdentifier />
+      </Enum>
+      <Class Name="FitnesGalaxyApp.DataB.DataSetTableAdapters.TableAdapterManager.SelfReferenceComparer" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ASAAACABBAJABkEBAAAIeAIgAAACgAAQEIQAQQIIRAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.Model.ClassHash">
+    <Position X="10.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ClassHash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.Model.Contract">
+    <Position X="15.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAQAAAAAAAAEAAEAAQAAAAAAAECAAAQAAAAAAA=</HashCode>
+      <FileName>Model\Contract.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.Models.AboutProgrammUserControll" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AboutProgrammUserControll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FitnesGalaxyApp.Models.AddUsersControll" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAEAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AddUsersControll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FitnesGalaxyApp.Models.AuthUserControll" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAEAAAAAAAACAAAAQAAAAAA=</HashCode>
+      <FileName>Models\AuthUserControll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FitnesGalaxyApp.Models.ContractsUserControl" BaseTypeListCollapsed="true">
+    <Position X="22.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ContractsUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FitnesGalaxyApp.Models.DataGridTableUserControl" BaseTypeListCollapsed="true">
+    <Position X="19" Y="6" Width="1.5" />
+    <NestedTypes>
+      <Class Name="FitnesGalaxyApp.Models.DataGridTableUserControl.Users" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Models\DataGridTableUserControl.xaml.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gCTAACEAAAIAAAAAKAIACAACAEEAAAHSEJCARQBIQQA=</HashCode>
+      <FileName>Models\DataGridTableUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FitnesGalaxyApp.Models.EditUserControl" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAgAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\EditUserControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FitnesGalaxyApp.Models.InfoCard" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAEEEQECgEAAAAAIAAAAAAAAACAEAAAA=</HashCode>
+      <FileName>Models\InfoCard.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FitnesGalaxyApp.Models.LastNewUserControll" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAEAAAACAAAAAEAIAAgAAAAAAQAEAAAA=</HashCode>
+      <FileName>Models\LastNewUserControll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FitnesGalaxyApp.Models.MainHomeAdminUserControll" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\MainHomeAdminUserControll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FitnesGalaxyApp.Models.SignUpUserControll" BaseTypeListCollapsed="true">
+    <Position X="12" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAABAAAAAAAAAAAEAAAAAAAACAAAAQIAAAAA=</HashCode>
+      <FileName>Models\SignUpUserControll.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FitnesGalaxyApp.Pages.MainAdminPage" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAACIBgAAAAAAAAIBAAEAAAQABIIAg=</HashCode>
+      <FileName>Pages\MainAdminPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FitnesGalaxyApp.Pages.MainMenu" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\MainMenu.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FitnesGalaxyApp.Pages.StartPage" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAEAAAQAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Pages\StartPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FitnesGalaxyApp.Properties.Resources">
+    <Position X="13.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.Properties.Settings">
+    <Position X="6.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FitnesGalaxyApp.Windows.StartWindow" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAQAAAAAQAAABAAAAAAAAABAAAA=</HashCode>
+      <FileName>Windows\StartWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
